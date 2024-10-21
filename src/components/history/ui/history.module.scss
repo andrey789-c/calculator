@@ -1,0 +1,13 @@
+.history {
+	width: 300px;
+	margin-bottom: 10px;
+	text-align: right;
+  padding: 20px;
+  border: 1px solid #4a4a4a;
+  border-radius: 12px;
+
+	&__list {
+		display: grid;
+		gap: 20px;
+	}
+}

@@ -1,11 +1,11 @@
 import s from "./calculator.module.scss";
-import useCalculator from "../../hooks/useCalculator";
-import { Button } from "../button";
-import { Display } from "../display/ui/display";
+import useCalculator from "../../../hooks/useCalculator";
+import { Button } from "../../button";
+import { Display } from "../../display/ui/display";
 import { useEffect } from "react";
-import { handleKeyDown } from "../../utils/handleKeyDown";
+import { handleKeyDown } from "../../../utils/handleKeyDown";
 
-const Calculator = () => {
+export const Calculator = () => {
 	const { result, input, handleButtonClick } = useCalculator();
 
 	useEffect(() => {
@@ -46,5 +46,3 @@ const Calculator = () => {
 		</div>
 	);
 };
-
-export default Calculator;
